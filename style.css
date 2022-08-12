@@ -1,6 +1,9 @@
+html{
+  background-color: black;
+}
+
 body{
   margin: 0px 8px;
-  background-color: black;
 }
 
 .center-horizontal{
