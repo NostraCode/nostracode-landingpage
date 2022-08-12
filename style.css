@@ -1,0 +1,38 @@
+body{
+  margin: 0px 8px;
+  background-color: black;
+}
+
+.center-horizontal{
+  /* background-color: pink; */
+  display: block;
+  position: relative;
+  max-width: 300px;
+  height: 100vh;
+  margin: auto;
+  
+}
+
+.center-vertical{
+  /* background-color: blue; */
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.logo{
+  /* background-color: yellow; */
+  display: block;
+  width: 100%;
+}
+
+.under{
+  /* background-color: purple; */
+  display: block;
+  margin: auto;
+  width: calc(80%) ;
+}
+
