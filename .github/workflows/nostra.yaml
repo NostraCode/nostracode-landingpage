@@ -9,7 +9,7 @@ jobs:
     name: Git pull 
     runs-on: ubuntu-latest
     steps:
-      - name: coba ssh connection
+      - name: connect ssh, and pull repo
         uses: appleboy/ssh-action@master
         env: 
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
@@ -20,6 +20,6 @@ jobs:
           passphrase: ${{ secrets.DO_PASSPHRASE }}
           script: |
             cd /var/www/nostracode/main
-            pwd
+            git pull origin main
             git status
             service nginx restart
